@@ -11,6 +11,28 @@ html, body {
 }
 
 .cta-btn {
+    right: 10px;
+    bottom: 10px;
+}
+
+.config-btn {
+    left: 10px;
+    bottom: 10px;
+}
+
+.c-btn {
+    left: 10px;
+    bottom: 80px;
+}
+
+.c-btn:nth-child(2) {
+    left: 10px;
+    bottom: 150px;
+}
+
+.cta-btn,
+.config-btn,
+.c-btn {
     background-color: #f1ff2b;
     color: black;
     width: 60px;
@@ -22,8 +44,6 @@ html, body {
     cursor: pointer;
     z-index: 2;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
 }
 
 .container {
