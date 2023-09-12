@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #39aabe;
+}
+
+.cta-btn {
+    background-color: #f1ff2b;
+    color: black;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 2;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note-box {
+    width: 25%;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.note-box textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 13px;
+    border: 1px solid #ccc;
+}
+
+.note-box textarea:focus {
+    outline: 0;
+}
+
+.note-box .c-delete {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #e92626;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .note-box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .note-box {
+        width: 100%;
+    }
+}
