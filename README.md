@@ -1,6 +1,6 @@
 # simple-notes
 
-Com o simple notes você pode anotar tudo o que você precisa fazer no seu dia, ou até mesmo definir metas importantes que você quer cumprir e conquistar em determinado período.
+Com o simple notes você pode anotar tudo necessário para o seu dia, ou até mesmo definir metas importantes que você quer cumprir e conquistar em determinado período.
 
 100% Responsivo, feito com flexbox e jquery.
 
