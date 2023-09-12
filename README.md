@@ -6,6 +6,6 @@ Com o simple notes você pode anotar tudo necessário para o seu dia, ou até me
 
 Irei implementar atualizações com frequência para melhorar cada vez mais a UI/UX
 
-*Por enquanto o deploy ficará OFF pois eu ainda não fiz o local storage para sincronizar com o seu navegador.*
+*Por enquanto o deploy ficará OFF pois eu ainda não fiz o local storage para sincronizar com o seu navegador e armazenar os dados corretamente.*
 
 Deploy -> https://helderjuann.github.io/simple-notes/ (DEPLOY OFF)
