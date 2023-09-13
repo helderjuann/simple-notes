@@ -8,6 +8,6 @@ Irei implementar atualizações com frequência para melhorar cada vez mais a UI
 
 *Por enquanto o deploy ficará OFF pois eu ainda não fiz o local storage para sincronizar com o seu navegador e armazenar os dados corretamente.*
 
-To do tomorrow (14/09/2023) -> Terminar o responsivo e fazer todas otimizações para o mobile
+To do tomorrow (14/09/2023) -> Melhorar o JavaScript
 
 Deploy -> https://helderjuann.github.io/simple-notes/ (DEPLOY OFF)
