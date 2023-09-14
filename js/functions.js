@@ -1,9 +1,18 @@
 $(function() {
 
+    function loadNotes() {
+        var savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+        savedNotes.forEach(function(note) {
+            var el = '<div class="note-box"><div class="c-delete">x</div><textarea>' + note + '</textarea></div>';
+            $('.container').append(el);
+        });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+        loadNotes();
+    });
+    
     $('.cta-btn').click(function() {
-
         var el = '<div class="note-box"><div class="c-delete">x</div><textarea></textarea></div>';
-
         $('.container').append(el);
         $('.note-box').last().hide().fadeIn(700);
 
@@ -15,17 +24,23 @@ $(function() {
         var hh = date.getHours();
         var mm = date.getMinutes();
 
-            if (mm < 10) {
-                mm = '0' + mm;
-            } else {
-                mm = mm + '';
-            }
+        if (mm < 10) {
+            mm = '0' + mm;
+        } else {
+            mm = mm + '';
+        }
 
         var yy = date.getFullYear();
         let exMonth = month[date.getMonth()];
 
         var lastHour = hh+":"+mm;
         tDesc.html(lastHour+" do dia "+dd+" de "+exMonth+" de "+yy+"\n"+"\n");
+
+        var myNotes = JSON.parse(localStorage.getItem('notes')) || [];
+
+        myNotes.push(tDesc.val());
+
+        localStorage.setItem('notes', JSON.stringify(myNotes));
     });
 
     $('body').on('click', '.c-delete', function() {
