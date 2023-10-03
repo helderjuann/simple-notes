@@ -1,16 +1,4 @@
 $(function() {
-
-    function loadNotes() {
-        var savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
-        savedNotes.forEach(function(note) {
-            var el = '<div class="note-box"><div class="c-delete">x</div><textarea>' + note + '</textarea></div>';
-            $('.container').append(el);
-        });
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        loadNotes();
-    });
-    
     $('.cta-btn').click(function() {
         var el = '<div class="note-box"><div class="c-delete">x</div><textarea></textarea></div>';
         $('.container').append(el);
