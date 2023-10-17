@@ -4,4 +4,6 @@ Com o *<b>Simple Notes</b>* você pode anotar tudo necessário para o seu dia, o
 
 To do ~> Implementar o LocalStorage para salvar as notas... 18/10/23
 
+
+<hr>
 Deploy -> https://helderjuann.github.io/simple-notes/ (DEPLOY OFF)
