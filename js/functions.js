@@ -50,7 +50,7 @@ $(function() {
         const notesText = document.querySelectorAll('textarea');
         const notes = [];
         notesText.forEach(note => notes.push(note.value));
-        localStorage.setItem('notes', JSON.stringify(notes));
+        localStorage.setItem('notes', JSON.stringify(notes)); //Terminar de mexer no código amanhã 19/10/23
     }
 
     disableTextS();
