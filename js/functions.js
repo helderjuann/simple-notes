@@ -1,5 +1,7 @@
 $(function() {
-    $('.cta-btn').click(function() {
+    const notes = JSON.parse(localStorage.getItem('notes'));
+
+    $('.cta-btn').click(function addBtn() {
         var el = '<div class="note-box"><div class="c-delete">x</div><textarea></textarea></div>';
         $('.container').append(el);
         $('.note-box').last().hide().fadeIn(700);
@@ -24,15 +26,18 @@ $(function() {
         var lastHour = hh+":"+mm;
         tDesc.html(lastHour+" do dia "+dd+" de "+exMonth+" de "+yy+"\n"+"\n");
 
-        var myNotes = JSON.parse(localStorage.getItem('notes')) || [];
+        if(notes) {
+            notes.forEach(note => addNewNote(note))
+        }
 
-        myNotes.push(tDesc.val());
+        addBtn.addEventListener('click', () => addNewNote());
 
-        localStorage.setItem('notes', JSON.stringify(myNotes));
+        updateLS();
     });
 
     $('body').on('click', '.c-delete', function() {
         $(this).closest('.note-box').fadeOut(600);
+        updateLS();
     });
 
     $('body').find('.c-btn').hide();
@@ -40,6 +45,13 @@ $(function() {
     $('body').on('click', '.config-btn', function() {
         $('.c-btn').slideToggle();
     })
+
+    function updateLS() {
+        const notesText = document.querySelectorAll('textarea');
+        const notes = [];
+        notesText.forEach(note => notes.push(note.value));
+        localStorage.setItem('notes', JSON.stringify(notes));
+    }
 
     disableTextS();
 
