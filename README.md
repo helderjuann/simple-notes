@@ -3,7 +3,7 @@
 Com o *<b>Simple Notes</b>* você pode anotar tudo necessário para o seu dia! <br> Ou até mesmo definir metas importantes para cumprir em determinado período.
 
 <hr>
-To do <br> Colocar o deploy on <br> Fazer sistema de customização com cor
+To do <br> Implementar customização e LocalStorage
 
 <hr>
 
