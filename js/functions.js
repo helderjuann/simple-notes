@@ -1,5 +1,5 @@
 $(function() {
-    const notes = JSON.parse(localStorage.getItem('notes'));
+    const notes = JSON.parse(localStorage.getItem('notes')); //Não está funcionando... Arrumar o quanto antes
 
     $('.cta-btn').click(function addBtn() {
         var el = '<div class="note-box"><div class="c-delete">x</div><textarea></textarea></div>';
