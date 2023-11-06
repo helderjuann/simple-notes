@@ -32,12 +32,12 @@ $(function() {
 
         addBtn.addEventListener('click', () => addNewNote());
 
-        updateLS();
+        updateLS(); //Remover
     });
 
     $('body').on('click', '.c-delete', function() {
         $(this).closest('.note-box').fadeOut(600);
-        updateLS();
+        updateLS(); //Remover
     });
 
     $('body').find('.c-btn').hide();
